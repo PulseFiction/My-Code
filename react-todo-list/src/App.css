@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(#7700ff, #00d9ff);
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* App */
+
+.App {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px; 
+  box-shadow: 0px 5px 5px 5px #a0a0a04f;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 30pt;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/* Add Task Component */ 
+
+.user-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+}
+
+.user-input {
+  font-size: 15pt;
+  padding: 0.3rem 0.8rem;
+  margin-right: 0.5rem;
+  border: 1px solid #00000052;
+  border-radius: 5px;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #7700ff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 0.1rem 0.4rem;
+  font-size: 20pt;
+}
+
+.add-button:hover {
+  cursor: pointer;
+  background-color: #ffd82d;
+  color: #000;
+}
+
+
+
+/* Task Component */
+
+.task-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  
+}
+
+.task {
+  background-color: #e0dfdf;
+  width: 85%;
+  height: 3rem;
+  padding: 0.8rem;
+  border-radius: 5px 0px 0px 5px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  
+ 
+}
+
+hr {
+  width: 100%;
+  color: #fff;
+  margin: 0;
+}
+
+.delete {
+  background-color: red;
+  height: 3rem;
+  padding: 0.3rem;
+  border-radius: 0px 5px 5px 0px;
+ 
+ 
+}
+
+.delete:hover {
+  background-color: rgb(248, 137, 137);
+  cursor: pointer;
+}
+
+.clear-button {
+  background-color: #7700ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1rem;
+  font-size: 400;
+  font-family: 'Work Sans', sans-serif;
+  margin-left: 1rem;
+}
+
+.clear-button:hover {
+  background-color: #ffd82d;
+  cursor: pointer;
+  color: #000;
+}
+
+
+/* Other */
+
