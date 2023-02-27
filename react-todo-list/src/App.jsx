@@ -4,8 +4,12 @@ import Task from './Task'
 import './App.css'
 
 function App() {
-  const [todo, setTodo] = useState([])
+  const [todo, setTodo] = useState(
+    JSON.parse(localStorage.getItem("todo")) || [])
   
+  useEffect(() => {
+    localStorage.setItem("todo", JSON.stringify(todo))
+  }, [todo])
 
   console.log("Initializing...")
   console.log("current todolist: " + todo)
